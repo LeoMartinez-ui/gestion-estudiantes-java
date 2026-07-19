@@ -1,0 +1,19 @@
+public class EstudiantePosgrado extends Estudiante {
+
+    private String lineaInvestigacion;
+
+    public EstudiantePosgrado(String nombre, int edad, double calificacion, String lineaInvestigacion) {
+        super(nombre, edad, calificacion);
+        this.lineaInvestigacion = lineaInvestigacion;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Línea de investigación: " + lineaInvestigacion);
+    }
+
+    public void publicarArticulo() {
+        System.out.println(nombre + " publicó un artículo científico.");
+    }
+}
