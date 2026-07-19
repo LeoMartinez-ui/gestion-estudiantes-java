@@ -1,0 +1,19 @@
+public class EstudianteLicenciatura extends Estudiante {
+
+    private String carrera;
+
+    public EstudianteLicenciatura(String nombre, int edad, double calificacion, String carrera) {
+        super(nombre, edad, calificacion);
+        this.carrera = carrera;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Carrera: " + carrera);
+    }
+
+    public void servicioSocial() {
+        System.out.println("El estudiante está realizando servicio social.");
+    }
+}
